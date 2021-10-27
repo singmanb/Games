@@ -125,13 +125,42 @@ display: flex;
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  
+  /* background-image: image(image\quiz.jpg); */
+  
+  
 }
 .footerbtn {
-  display: grid;
-  grid-template-columns: repeat(1fr 1fr);
+  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(2fr 2fr); */
   background-color:blue;
   padding: 5px;
   font-size: 30px;
+  margin: 30px;
 }
+
+.footerbtnnext {
+  display: flex;
+
+
+  background-color:blue;
+  padding: 5px;
+  font-size: 30px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  float: right;
+  margin: 30px;
+  
+
+  
+}
+
+/* 
+@media screen and (min-width: 768px) {
+  main{
+      width: 300px;
+      
+  }
+} */
