@@ -1,0 +1,137 @@
+/* outermost background */
+.container {
+  max-width:fit-content
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: aqua;
+  
+}
+
+.quiz-box {
+width: 1000px;
+margin: 0 auto;
+background-color:chartreuse;
+padding: 1rem 5rem 5rem 5rem;
+border: 3px solid var(--color-primary);
+border-radius: 5px;
+border-color: black;
+border: 5px dotted rebeccapurple;
+}
+
+/* box- quiz time */
+.quiz-box h1 {
+  background-color: var(--color-primary);
+  font-size: 4rem;
+  text-align: center;
+  color: var(--white);
+  padding: 1rem 0;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  border: 5px solid black;  
+}
+
+/* question box */
+.quiz-header {
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  border: 3px solid black;
+  background-color:lightsteelblue
+}
+
+.quiz-header #progress {
+  color: var(--color-dark-grey);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#count-down {
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color:#fff;
+  padding: 5px;
+  margin: 1px;
+  color: var(--white);
+  border-radius: 3px;
+  text-align: right;
+}
+
+#question {
+  
+  
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  border: 2px solid black;
+  padding: 5px 0;
+  text-align:justify;
+  background-color:darkslategray;
+}
+
+.buttons {
+margin: 1.5rem 0 4rem 0;
+display: flex;
+}
+
+.btn {
+  text-align: left;
+  background-color:lightsteelblue;
+  width: 100%;
+  font-size: 1.8rem;
+  color: var(--black);
+  border: 5px red
+  margin: 3px;
+  padding 5rem;
+  outline: 3px;
+
+
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--white);
+}
+
+.btn:active {
+  background-color:hotpink;
+}
+
+#score {
+  color: var(--black);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.quiz-repeat {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  background-color: coral;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+.quiz-repeat a:hover {
+  background-color: var(--color-primary);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footerbtn {
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr);
+  background-color:blue;
+  padding: 5px;
+  font-size: 30px;
+}
