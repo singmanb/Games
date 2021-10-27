@@ -26,7 +26,7 @@ border: 5px dotted rebeccapurple;
 .quiz-box h1 {
   background-color: var(--color-primary);
   font-size: 4rem;
-  text-align: center;
+  text-align:justify;
   color: var(--white);
   padding: 1rem 0;
   width: 100%;
@@ -155,6 +155,20 @@ display: flex;
   
 
   
+}
+
+.btninstruction {
+
+  display: flex;
+
+
+  background-color:darkgray
+  padding: 5px;
+  font-size: 30px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  float: right;
+  margin::content 30px;
 }
 
 /* 
