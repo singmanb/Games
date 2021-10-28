@@ -1,3 +1,14 @@
+<!-- PSEUDOCODE
+Requirement: to have a display for user to read INSTRUCTIONS and follow them to complete the quiz
+user to see a timer where he can keep a track of the time while answering the questions
+user to see the score at the end of the quiz to check his performancs
+user should be able to see if the answer submitted by him/her is CORRECT or WRONG
+user should be able to navigate to next page after completing first question
+user should be able to take retest if not performed well
+user should be able to see a SUCCESS message if the quiz is completed successfully
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +25,9 @@
       <div class="quiz-box">
 
         <div class="instructions"> </div>
+        <img src="questionmark.jpg" alt="">
         <button class="btninstruction" id="btninst">
-          INSTRUCTIONS <span id="instbutton"></span>
+          INSTRUCTIONS <span id="instbutton"> </span>
         </button>
 
         <div id="quiz">
@@ -27,16 +39,16 @@
             <p id="question"> This is the first question for Quiz </p>
             <div class="buttons">
               <button class="btn" id="btn0">
-                  A. <span id="choice0"></span>
+                  A. <span id="chk1"></span>
               </button>
               <button class="btn" id="btn1">
-                B. <span id="choice1"></span>
+                B. <span id="chk2"></span>
             </button>
             <button class="btn" id="btn2">
-              C. <span id="choice2"></span>
+              C. <span id="chk3"></span>
           </button>
           <button class="btn" id="btn3">
-            D. <span id="choice3"></span>
+            D. <span id="chk4"></span>
         </button>
             </div>
             <hr>
@@ -44,7 +56,7 @@
 
               <div class="footerquiz">
 
-<button class="footerbtn" id="btnfooter">
+<button class="footerbtn" id="btnfooter" onclick="show_questions();">
   START <span id="startbutton"></span>
 </button>
 
@@ -58,6 +70,6 @@
 
 
     </div>
-  
+  <script src="main.js"></script>
 </body>
 </html>
